@@ -83,7 +83,9 @@ md-tabs-canvas,
 md-pagination-wrapper {
   height: auto;
   background: white;
-  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.3);
+}
+md-tabs.md-primary > md-tabs-wrapper {
+  box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.1);
   z-index: 9999;
 }
 md-tabs-content-wrapper {

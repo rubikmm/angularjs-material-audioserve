@@ -3,15 +3,23 @@ import "angular-material";
 import "angular-messages";
 import "angular-material-icons";
 
+import "./app/header/header.component.js";
+
 // Import your app stylesheets
 import "./style.css";
 
 // Import your app functionality
-import "./app/index.js";
+import "./app/app.component.js";
 
 // Create and bootstrap application
-const requires = ["app", "ngMaterial", "ngMessages", "ngMdIcons"];
-const app = angular.module("appRoot", requires);
+const requires = [
+  "app",
+  "ngMaterial",
+  "ngMessages",
+  "ngMdIcons",
+  "header.component"
+];
+const app = angular.module("appAudioserve", requires);
 app
   .config([
     "$mdGestureProvider",
@@ -25,10 +33,6 @@ app
         .accentPalette("purple")
         .warnPalette("purple")
         .backgroundPalette("grey");
-
-      $mdIconProvider
-        .iconSet("social", "img/icons/sets/social-icons.svg", 24)
-        .defaultIconSet("img/icons/sets/core-icons.svg", 24);
     }
   ])
   .directive("regularCard", function() {
