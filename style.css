@@ -83,8 +83,8 @@ md-tabs-canvas,
 md-pagination-wrapper {
   height: auto;
   background: white;
-  box-shadow: black;
-  border-bottom: 1px solid #000;
+  box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
 }
 md-tabs-content-wrapper {
   top: 80px;
@@ -156,9 +156,4 @@ md-input-container.md-default-theme:not(.md-input-invalid).md-input-has-value
 md-input-container:not(.md-input-invalid).md-input-has-value label {
   color: rgba(255, 255, 255, 0.87);
   font-size: 12px;
-}
-
-ng-md-icon {
-  /* border-radius: 30px; */
-  border: 1px solid #fff;
 }
