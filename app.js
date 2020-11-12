@@ -3,8 +3,6 @@ import "angular-material";
 import "angular-messages";
 import "angular-material-icons";
 
-import "./app/header/header.component.js";
-
 // Import your app stylesheets
 import "./style.css";
 
@@ -12,14 +10,8 @@ import "./style.css";
 import "./app/app.component.js";
 
 // Create and bootstrap application
-const requires = [
-  "app",
-  "ngMaterial",
-  "ngMessages",
-  "ngMdIcons",
-  "header.component"
-];
-const app = angular.module("appAudioserve", requires);
+const requires = ["app", "ngMaterial", "ngMessages", "ngMdIcons"];
+const app = angular.module("appRoot", requires);
 app
   .config([
     "$mdGestureProvider",
