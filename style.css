@@ -159,3 +159,36 @@ md-input-container:not(.md-input-invalid).md-input-has-value label {
   color: rgba(255, 255, 255, 0.87);
   font-size: 12px;
 }
+
+.mat-tab-content {
+  animation: fade-out 0.5s;
+  opacity: 0;
+}
+.mat-tab-content.mat-tab-content-active {
+  animation: fade-in 0.5s;
+  opacity: 1;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
